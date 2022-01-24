@@ -15,15 +15,23 @@ const path = require('path'); //add this
  */
 
 mix.alias({
-    "@": path.join(__dirname, "resources/app"),
+    "@": path.join(__dirname, "resources/js"),
     "~": path.join(__dirname, "node_modules"),
 });
 
 mix
+    .webpackConfig({
+        resolve: {
+            alias: {
+                "@" : path.resolve(__dirname, 'resources/js'),
+                "~": path.join(__dirname, "node_modules")
+            }
+        }
+    })
     .js('resources/js/app.js', 'public/js').vue()
     // .js("resources/app/main.js", "public/dist/js")
     // .vue()
-    .sass("resources/app/assets/sass/app.scss", "public/dist/css")
+    .sass("resources/app/sass/app.scss", "public/dist/css")
     .options({
         processCssUrls: false,
         postCss: [tailwindcss("./tailwind.config.js")],
