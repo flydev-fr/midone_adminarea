@@ -16,20 +16,30 @@
         "@tailwindcss/forms": "^0.4.0",
         "@tailwindcss/typography": "^0.5.0",
         "@vue/compiler-sfc": "^3.0.5",
+        "autoprefixer": "^10.4.2",
         "axios": "^0.21",
-        "browser-sync": "^2.27.7",
+        "browser-sync": "2.23.6",
         "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
+        "postcss": "8.3.1",
         "postcss-import": "^12.0.1",
+        "postcss-loader": "^4.1.0",
+        "resolve-url-loader": "5.0.0",
         "sass": "^1.46.0",
         "sass-loader": "^12.4.0",
-        "tailwindcss": "^3.0.0",
+        "tailwindcss": "^2.2.19",
         "vue": "^3.0.5",
         "vue-loader": "^16.1.2"
     },
     "dependencies": {
-        "@left4code/tw-starter": "3.1.13"
+        "@left4code/tw-starter": "2.3.1",
+        "dropzone": "^6.0.0-beta.2",
+        "highlight.js": "^11.4.0",
+        "tabulator-tables": "^5.1.0",
+        "tippy.js": "^6.3.7",
+        "toastify-js": "^1.11.2",
+        "tom-select": "^2.0.0",
+        "zoom-vanilla.js": "^2.0.6"
     }
 }
