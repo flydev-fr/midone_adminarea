@@ -2,12 +2,12 @@ const primaryColors = require("@left4code/tw-starter/dist/js/colors");
 
 module.exports = {
     mode: "jit",
-    content: [
+    purge: [
         "./src/**/*.{php,html,js,jsx,ts,tsx,vue}",
         "./resources/**/*.{php,html,js,jsx,ts,tsx,vue}",
         "./node_modules/@left4code/tw-starter/**/*.js",
         "./*.{php,html,js,jsx,ts,tsx,vue}",
-        ".//.html",
+        //".//.html",
     ],
     darkMode: "class",
     theme: {
@@ -67,7 +67,37 @@ module.exports = {
                 35: "#E63B1F",
             },
         },
+        
         extend: {
+            colors: {
+                primary: "var(--primary)",
+                secondary: "var(--secondary)",
+                main: "var(--main)",
+                background: "var(--background)",
+                header: "var(--header)",
+                accent: "var(--accent)",
+                'primary-0': 'var(--primary-0)',
+                'primary-1': 'var(--primary-1)',
+                'primary-2': 'var(--primary-2)',
+                'primary-3': 'var(--primary-3)',
+                'primary-4': 'var(--primary-4)',
+                'primary-5': 'var(--primary-5)',
+                'primary-6': 'var(--primary-6)',
+                'primary-7': 'var(--primary-7)',
+                'primary-8': 'var(--primary-8)',
+                'primary-9': 'var(--primary-9)',
+                'secondary-0': 'var(--secondary-0)',
+                'secondary-1': 'var(--secondary-1)',
+                'secondary-2': 'var(--secondary-2)',
+                'secondary-3': 'var(--secondary-3)',
+                'secondary-4': 'var(--secondary-4)',
+                'secondary-5': 'var(--secondary-5)',
+                'secondary-6': 'var(--secondary-6)',
+                'secondary-7': 'var(--secondary-7)',
+                'secondary-8': 'var(--secondary-8)',
+                'secondary-9': 'var(--secondary-9)',
+                'secondary-10': 'var(--secondary-10)',
+            },
             fontFamily: {
                 roboto: ["Roboto"],
             },

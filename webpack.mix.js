@@ -15,7 +15,7 @@ const path = require('path'); //add this
  */
 
 mix.alias({
-    "@": path.join(__dirname, "resources/js"),
+    "@": path.join(__dirname, "resources/app"),
     "~": path.join(__dirname, "node_modules"),
 });
 
@@ -29,13 +29,8 @@ mix
         }
     })
     .js('resources/js/app.js', 'public/js').vue()
-    // .js("resources/app/main.js", "public/dist/js")
-    // .vue()
-    .sass("resources/app/assets/sass/app.scss", "public/dist/css")
-    .options({
-        processCssUrls: false,
-        postCss: [tailwindcss("./tailwind.config.js")],
-    })
+    //.sass("resources/app/assets/sass/app.scss", "public/dist/css")
+    
     .autoload({
         "cash-dom": ["cash"],
         "@popperjs/core": ["Popper"],
@@ -44,3 +39,4 @@ mix
         proxy: "midone-vue-laravel.test",
         files: ["resources/**/*.*"],
     });
+
